@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background: black;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url("assets/bera2.jpg");
+
+            /* Full height */
+            height: 100%; 
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @font-face {
+            font-family: 'MyFont';
+            src: url('assets/drip.ttf') format('truetype');
+        }
+
+        .coming-soon {
+            font-family: "MyFont";
+            position: absolute;
+            bottom: 50%; /* Adjust this to change vertical position */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, 50%); /* Necessary for centering */
+            width: 100%;
+            text-align: center;
+            color: rgb(201, 194, 7);
+            font-size: 5em; /* Increase the font size */
+            font-weight: bold; /* Make the font bolder */
+            z-index: 100;
+        }
+        .social-media-buttons {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.0); /* semi-transparent black */
+            z-index: 1000;
+        }
+
+        .social-media-buttons a {
+            margin: 0 10px;
+        }
+        .social-media-buttons a:focus {
+            outline: none;
+        }
+
+        .social-media-buttons img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="coming-soon">Coming Soon!</div>
+<div class="social-media-buttons">
+    <a href="https://twitter.com/BeraPong" target="_blank">
+        <img src="assets/X_logo.png" alt="X">
+    </a>
+</div>
+
+</body>
+</html>
